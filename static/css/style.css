@@ -1,0 +1,124 @@
+/* Style the header */
+/* Header/Blog Title */
+.header {
+    padding: 20px;
+    text-align: left;
+    background: rgba(87, 107, 35, 0.39);
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  #header {
+    background: rgb(223, 214, 214);
+  }
+   
+  .prediction {
+    font-size: 26px;
+    color: rgb(8, 1, 1);
+    z-index: 10;
+    position: relative;
+  }
+  
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgb(38, 46, 13);
+    background: rgb(247, 244, 244) ;
+  }
+
+  Table {
+    width: 150%;
+    border-collapse: collapse;
+  } 
+  
+  
+
+  .table-responsive {
+    overflow-x:auto; 
+    overflow-y:auto;
+    max-height:600px; 
+    max-width: auto; 
+    text-align:left;    
+  }
+         
+   
+      
+      table.dataframe { 
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(239, 242, 243);
+        text-align:left;
+       
+      }
+    
+      tr:nth-child(even) {
+        background-color: #ecf3f0;}
+
+      h1 {text-align:Center;}
+    
+    table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color:#f2f2f2}
+  
+  th {
+    background-color: #0b0e0060;
+    color: white;
+  }
+  
+  
+  h1 {
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: rgb(12, 1, 1);
+    text-align: Left;
+  
+  }
+  
+ 
+  #images {
+    float: left;
+    margin-right: 10px;
+  }
+  
+  #content {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; 
+   }
+   
+   .center {
+    height: auto;
+    object-fit: fill;
+    }
+    
+
+  body {
+    background-image: url(https://pngimg.com/uploads/wine/wine_PNG9460.png);
+    height: 500px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+        } 

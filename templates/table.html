@@ -1,0 +1,74 @@
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Data</title>
+  
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+  </head>
+  
+  <body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Back</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+            
+          <li class="nav-item">
+            <a class="nav-link" href="/predictor">Predictor</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/table">Data</a>
+          </li>
+  
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+<div class="header">
+    <h1>White Wine Data </h1>
+   </div>
+<br>
+<br>
+
+<div class="container">
+  
+
+
+  
+        
+  <div id="content">
+    <div class="table-responsive">
+     {{table|safe}}
+ </div>
+
+
+    <form action="/">
+        <input type="submit" value="Back" />
+    </form>
+
+
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+<script src="{{url_for('static', filename='js/app.js')}}"></script>
+
+<p style= "color:white;">The data above was obtained from UCI Machine Learning Repository. It contains data about white variants of the Portuguese "Vinho Verde" wine. Reference [Cortez et al., 2009] for more details. </p>
+ 
+</body>
+</html>
