@@ -14,11 +14,11 @@ app = Flask(__name__)
 
 
 
-engine = create_engine(f'postgresql://postgres:postgres@localhost:5432/whitewine_db')
+#engine = create_engine(f'postgresql://postgres:postgres@localhost:5432/whitewine_db')
 
 # DATABASE_URL will contain the database connection string:
-#engine = create_engine(os.environ.get('DATABASE_URL', ''))
-data= pd.read_sql("select * FROM whitewine", con=engine) 
+engine = create_engine(os.environ.get('DATABASE_URL', ''))
+data= pd.read_sql("select * FROM wine", con=engine) 
 
 @app.route('/')
 def index():
