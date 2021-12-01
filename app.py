@@ -7,12 +7,17 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 import pickle
+from sklearn.ensemble import RandomForestClassifier
+
 
 app = Flask(__name__)
 
 
 
 engine = create_engine(f'postgresql://postgres:postgres@localhost:5432/whitewine_db')
+
+# DATABASE_URL will contain the database connection string:
+#engine = create_engine(os.environ.get('DATABASE_URL', ''))
 data= pd.read_sql("select * FROM whitewine", con=engine) 
 
 @app.route('/')
